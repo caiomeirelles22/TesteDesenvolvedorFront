@@ -92,7 +92,9 @@ export function PokeInfosDrawer({
       </div>
       <div className="grid grid-cols-3 gap-4 py-2">
         <div className="text-center">
-          <p className="text-2xl font-bold">{selectedPokemonData?.height}cm</p>
+          <p className="text-2xl font-bold">
+            {(selectedPokemonData?.height ?? 0) / 10}m
+          </p>
           <p className="text-xs text-muted-foreground">Altura</p>
         </div>
         <div className="text-center">
